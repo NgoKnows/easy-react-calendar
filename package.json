@@ -1,12 +1,11 @@
 {
   "name": "easy-react-calendar",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "an easy react calendar component",
   "main": "lib/index.js",
   "scripts": {
     "start": "node server.babel.js",
     "build": "webpack -p",
-    "test": "babel src -d lib",
     "prepublish": "npm run build"
   },
   "repository": {
