@@ -27,13 +27,13 @@ class Day extends Component {
 
 const STYLES = {
     day: {
-        fontSize: '1.25rem',
-        width: '1.25rem',
-        height: '1.25rem',
-        padding: '0.45rem 0.5rem 0.6rem 0.5rem',
-        margin: '0 0.375rem',
         display: 'flex',
+        fontSize: '1.25rem',
+        height: '1.25rem',
         justifyContent: 'center',
+        margin: '0 0.375rem',
+        padding: '0.45rem 0.5rem 0.6rem 0.5rem',
+        width: '1.25rem',
         ':hover': {
             background: '#2E7D32',
             borderRadius: '50%',

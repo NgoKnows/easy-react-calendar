@@ -153,14 +153,14 @@ const STYLES = {
 }
 
 Calendar.propTypes = {
-    day            : PropTypes.number.isRequired,
-    month          : PropTypes.number.isRequired,
-    year           : PropTypes.number.isRequired,
-    handleDayClick : PropTypes.func
+    day             : PropTypes.number.isRequired,
+    month           : PropTypes.number.isRequired,
+    year            : PropTypes.number.isRequired,
+    handleChangeDay : PropTypes.func
 };
 
 Calendar.defaultProps = {
-    handleDayClick : () => {}
+    handleChangeDay : () => {}
 }
 
 export default Radium(Calendar)

@@ -86,14 +86,14 @@ const STYLES = {
         left: 0
     },
     container: {
-        fontSize: '1.5rem',
+        backgroundColor: '#2E7D32',
         color: 'white',
         display: 'flex',
         flexDirection: 'column',
+        fontSize: '1.5rem',
+        fontWeight: 100,
         justifyContent: 'center',
-        backgroundColor: '#2E7D32',
-        padding: '2rem 1rem',
-        fontWeight: 100
+        padding: '2rem 1rem'
     },
 
     leftArrow: {
@@ -131,24 +131,22 @@ const STYLES = {
     },
 
     select: {
+        alignItems: 'center',
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center',
         padding: '0 0.75rem'
     }
 }
 
 DateHeader.propTypes = {
-    day                  : PropTypes.number.isRequired,
-    month                : PropTypes.number.isRequired,
-    year                 : PropTypes.number.isRequired,
-    handleMonthBackwards : PropTypes.func,
-    handleMonthForward   : PropTypes.func
+    day              : PropTypes.number.isRequired,
+    month            : PropTypes.number.isRequired,
+    year             : PropTypes.number.isRequired,
+    handleChangeDate : PropTypes.func,
 };
 
 DateHeader.defaultProps = {
-    handleMonthBackwards : () => {},
-    handleMonthForward   : () => {}
+    handleChangeDate : () => {}
 };
 
 export default Radium(DateHeader)
