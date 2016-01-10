@@ -1,0 +1,1 @@
+module.exports = require('./js/components/DatePicker.es6.js')
